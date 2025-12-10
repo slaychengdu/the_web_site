@@ -2,30 +2,51 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>我的 GitHub Pages 示例</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>铁路行业安管人员培训平台入口</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f8ff;
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #fff;
       text-align: center;
-      padding: 50px;
+      background: url('YOUR_BACKGROUND_IMAGE_URL') no-repeat center center fixed;
+      background-size: cover;
     }
-    h1 {
-      color: #2c3e50;
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    p {
-      color: #34495e;
+
+    .logos {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 40px;
     }
-    a {
-      color: #e74c3c;
+
+    .logos img {
+      height: 100px;
+      width: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      background-color: #fff;
+      padding: 10px;
+    }
+
+    .link-button {
+      background-color: #0078D7;
+      color: white;
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 8px;
       text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  <h1>欢迎来到我的 GitHub Pages 网站 🎉</h1>
-  <p>这是一个最简单的示例页面。</p>
-  <p>你可以在这里写博客、展示项目，或者放上你的简历。</p>
-  <p><a href="https://github.com/">访问我的 GitHub</a></p>
-</body>
-</html>
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
