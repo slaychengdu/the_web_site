@@ -22,9 +22,11 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start; /* ✅ 保持从上往下排 */
+      justify-content: center;
       align-items: center;
-      padding-top: 20%; /* ✅ 保持整体下移 */
+      justify-content:flex-start; 
+      padding-top: 20%;
+
     }
 
     .logos {
@@ -33,26 +35,26 @@
       margin-bottom: 40px;
     }
 
-    .logo-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+     .logo-item { /* ✅ 新增：单个图标容器，方便在图标下加文字 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 
     .logos img {
-      height: 120px;
-      width: auto;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-      background-color: #fff;
-      padding: 10px;
+    height: 120px; /* ✅ 新改动：原来是 100px，现在调大到 120px */
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    background-color: #fff;
+    padding: 10px;
     }
 
-    .logo-caption {
-      margin-top: 10px;
-      font-size: 16px;
-      color: #fff;
-    }
+    .logo-caption { /* ✅ 新增：图标下方文字样式 */
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+   }
 
     .link-button {
       background-color: #0078D7;
@@ -82,23 +84,23 @@
 <body>
   <div class="overlay">
     <div class="logos">
-      <!-- ✅ 改动：先放西南交通大学在左边 -->
-      <div class="logo-item">
-        <img src="WechatIMG2791.jpg" alt="机构徽标2">
-        <div class="logo-caption">西南交通大学</div>
+      
+      
+      <div class="logo-item"> <!-- ✅ 右边图标容器 -->
+        <img src="https://raw.githubusercontent.com/slaychengdu/the_web_site/main/WechatIMG2791.jpg
+" alt="机构徽标2">
+        <div class="logo-caption">西南交通大学</div> <!-- ✅ 新增：右边图标下方文字 -->
       </div>
-
-      <!-- ✅ 改动：交铁质量安全研究院移到右边 -->
-      <div class="logo-item">
+      <div class="logo-item"> <!-- ✅ 新增：左边图标容器 -->
         <img src="https://raw.githubusercontent.com/slaychengdu/the_web_site/f3946b37399dbc73753d2114fbf7ca647cf70628/WechatIMG2790.jpg" alt="机构徽标1">
-        <div class="logo-caption">交铁质量安全研究院</div>
+        <div class="logo-caption">交铁质量安全研究院</div> <!-- ✅ 新增：左边图标下方文字 -->
       </div>
     </div>
-
     <a class="link-button" href="https://tlagpx.com:8081/edu-web/course/index" target="_blank">
       铁路行业安管人员培训平台入口
     </a>
-    <div class="footer">© 2025 JTU Rail Institute of Quality and Safety & Southwest Jiaotong University</div>
+    <div class="footer">© 2025 Southwest Jiaotong University & JTU Rail Institute of Quality and Safety</div>
   </div>
 </body>
+
 </html>
